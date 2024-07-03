@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagems/fogg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #242148;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #b3008f;
+    position: relative;
+
+}
+
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #b3008f;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.input-group{
+    height: 280px;
+}
+.input-field{
+    background-color: #bf7b86;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px;
+
+}
+.input-field span{
+    margin-left: 15px;
+    color: #242148;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+    color: #b3008f;
+}
+form p a{
+    text-decoration: none;
+    color: #d225e9;
+    margin-left: 5px;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 48%;
+    background: #e4a03f;
+    color: #b3008f;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.btn-field button.disable{
+    background-color:#fccc95;
+    color: #501458;
+}
+label.error{
+    font-weight: 700;
+    display: block;
+    color: #f00;
+    font-size: 14px;
+}
